@@ -1,0 +1,107 @@
+body {
+    background-color: #EBECF1;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+}
+
+h1 {
+    font-family: 'Aboreto', cursive;
+} 
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container_item {
+    height: 90vh;
+    width: 200px;
+    background-position: center;
+    background-size: cover;
+    margin: 5px;
+}
+h2, p {
+    background-color: #EBECF1;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    opacity: 0;
+}
+
+.selected {
+    transition: width 1s linear;
+}
+.selected:hover {
+    width: 450px;
+}
+
+.selected h2, .selected p {
+    opacity: 1;
+    transition: all 1s ease-in 1s;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+}
+
+.form_user {
+    font-family: 'Open Sans', sans-serif;
+    padding: 5px;
+}
+
+input, textarea {
+    padding: 5px;
+    border: 4px solid #fde2e2;
+}
+textarea:focus::-webkit-input-placeholder {
+        color: transparent
+    }
+input[type=text]:focus::-webkit-input-placeholder {
+        color: transparent
+    }
+
+.btn {
+    width: 25%;
+    height: 50px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    padding: 5px;
+    text-transform: uppercase;
+    background-color:  #fde2e2;
+    border: none;
+}
+
+@media all and (max-width: 320px) {
+    h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+}
+@media all and (max-width: 280px) {
+    .form_user {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.container_img-one {
+    background-image: url('../images/art-img.jpg');
+}
+.container_img-two {
+    background-image: url('../images/business-img.jpg');
+}
+.container_img-three {
+    background-image: url('../images/city-img.jpg');
+}
+.container_img-four {
+    background-image: url('../images/experimental-img.jpg');
+}
+.container_img-five {
+    background-image: url('../images/portrait-img.jpg');
+}
